@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positivo ou negativo, impar ou par</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt('digite um numero qualquer'));
+
+        let imparpar = num % 2 === 0 ? 'par' : 'impar';
+        let sinais = num >= 0 ? 'positivo' : 'negativo';
+        
+        if (num === 0) {
+            alert(`seu numero e ${imparpar} e neutro`)
+        } else {
+            alert(`seu numero e ${imparpar} e ${sinais}`);
+        }
+    </script>
+</body>
+</html>

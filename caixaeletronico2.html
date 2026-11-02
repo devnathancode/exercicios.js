@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caixa eletronico</title>
+</head>
+<body>
+    <script>
+        let saldo = 91
+        let valordosaque = 199
+
+        if (valordosaque <= 0) {
+            console.log('o valor do saque precisa ser maior que 0');
+        }
+        else if (saldo < valordosaque) {
+            console.log('este saque nao pode ser efetuado');
+        }
+        else if (valordosaque <= saldo) {
+            console.log('o saque pode ser efetuado');
+        }
+        let output = saldo - valordosaque;
+        let outroout = valordosaque;
+
+        console.log('valor do saldo antes do saque: '+ saldo);
+        if (saldo < valordosaque) {
+           console.log('nao pode ser efetuado');
+        } else {
+            console.log('saldo: '+ output);
+        }
+        if (valordosaque < saldo) {
+            console.log('voce nao pode efetuar esse saque por que seu saldo esta insufuciente');
+        } else if (saldo >= valordosaque) {
+        console.log('valor do saque: '+ outroout);
+        }
+
+
+    </script>
+</body>
+</html>

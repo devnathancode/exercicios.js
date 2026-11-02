@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrinho contandor</title>
+</head>
+<body>
+    <h1>carrinho!</h1>
+
+    <h1>29,99</h1>
+    <button id="contador">contador</button>
+
+    <script>
+        let contador = document.getElementById('contador');
+        let total = 0;
+
+        contador.addEventListener('click', () => {
+            total += 29.99
+
+            contador.textContent = ' R$' + total.toFixed(2);
+        })
+
+
+    </script>
+</body>
+</html>

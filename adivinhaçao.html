@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo de adivinhaçao</title>
+</head>
+<body>
+    <button id="btn">clique para gerar um numero</button>
+    <h1 id="h1"></h1>
+    <h1 id="tent">tentativas</h1>
+    <script>
+
+        let btn = document.getElementById('btn');
+        let h1 = document.getElementById('h1');
+
+        btn.addEventListener('click', function() {
+
+        let num1 = Math.floor(Math.random() * 100) + 1;
+        let num2 = 70
+        let tent = document.getElementById('tent');
+        let tentativas = tent++;
+        tent.textContent = tentativas;
+
+        if (num1 <= num2 && num1 >= 0) {
+            h1.textContent = 'numero do computador menor ou igual';
+        } 
+        else {
+            h1.textContent = 'numero do computador maior';
+        }
+
+    })
+
+
+
+    </script>
+</body>
+</html>

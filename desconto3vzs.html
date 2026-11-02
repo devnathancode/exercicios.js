@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificar desconto</title>
+</head>
+<body>
+    <script>
+        let total = 100
+        let deztotal = 400
+        let desconto = 0.10
+        let dezconto = 0.20
+        let valordodesconto = total * desconto
+        let resultado = total - valordodesconto
+
+        let valordezconto = deztotal * dezconto
+        let result = deztotal - valordezconto
+
+        if (total >= 100 && total < 200) {
+            alert(resultado)
+        }
+        if (deztotal >= 200) {
+            alert(result)
+        }
+
+
+
+    </script>
+</body>
+</html>

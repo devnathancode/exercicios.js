@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificando nota dos alunos</title>
+</head>
+<body>
+    <script>
+        let nota1 = 5;
+        let nota2 = 2;
+        let nota3 = 10;
+        let somanota = (nota1 + nota2 + nota3) / 3;
+
+        if (somanota >= 7) {
+            console.log('aprovado');
+        }
+        else if (somanota >= 5 && somanota <= 6.9) {
+            console.log('recuperacao');
+        } else {
+            console.log('reprovado!');
+        }
+        console.log('sua nota: '+ somanota.toFixed(0));
+    </script>
+</body>
+</html>

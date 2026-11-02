@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adivinhe o numero</title>
+</head>
+<body>
+    <script>
+        let num1 = Math.floor(Math.random() * 100) + 1
+        let num2 = 40;
+
+        if (num1 === num2) {
+            console.log('usuario venceu')
+        }
+        else if (num1 > num2) {
+            console.log('numero do computador maior')
+        }
+        else if (num1 < num2) {
+            console.log('numero do usuario maior')
+        } else {
+            console.log('computador ganha')
+        }
+
+
+    </script>
+</body>
+</html>
